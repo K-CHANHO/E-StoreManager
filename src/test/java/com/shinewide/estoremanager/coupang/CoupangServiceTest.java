@@ -13,12 +13,18 @@ import static org.junit.jupiter.api.Assertions.*;
 @Slf4j
 class CoupangServiceTest {
 
-    @Autowired CoupangService coupangService;
+    @Autowired
+    private CoupangService coupangService;
 
     @Test
     void getProductList() {
         ProductListDto productList = coupangService.getProductList();
         log.info("테스트 결과");
         log.info(productList.toString());
+    }
+
+    @Test
+    void getProperties(){
+        coupangService.getProperties();
     }
 }
