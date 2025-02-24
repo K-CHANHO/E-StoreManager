@@ -32,6 +32,17 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	implementation fileTree(dir: 'libs', includes:  ['*.jar'])
+	// Spring Boot 기본
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	// JPA & MySQL
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	// Spring Security (추후 JWT 추가)
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// 개발 편의성
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	// 테스트
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
