@@ -3,14 +3,13 @@ package com.shinewide.estoremanager.controller;
 
 import com.shinewide.estoremanager.dto.AuthResponseDto;
 import com.shinewide.estoremanager.dto.UserRequestDto;
+import com.shinewide.estoremanager.security.UserDetailsImpl;
 import com.shinewide.estoremanager.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/users")
@@ -29,6 +28,10 @@ public class UserController {
     public ResponseEntity<AuthResponseDto> login(@RequestBody @Valid UserRequestDto requestDto) {
         AuthResponseDto response = userService.login(requestDto);
         return ResponseEntity.ok(response);
+    }
 
+    @GetMapping("/me")
+    public ResponseEntity<UserDetailsImpl> getCurrentUser(@AuthenticationPrincipal UserDetailsImpl userDetails) {
+        return ResponseEntity.ok(userDetails);
     }
 }
