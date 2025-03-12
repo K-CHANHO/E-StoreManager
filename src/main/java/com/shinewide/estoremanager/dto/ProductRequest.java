@@ -1,12 +1,10 @@
 package com.shinewide.estoremanager.dto;
 
-import com.shinewide.estoremanager.domain.Product;
+import com.shinewide.estoremanager.domain.Category;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-
-import static com.shinewide.estoremanager.domain.Product.*;
 
 @Getter
 @Setter

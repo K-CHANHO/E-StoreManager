@@ -27,8 +27,4 @@ public class Product {
 
     @Enumerated(EnumType.STRING)
     private Category category; // 상품 카테고리
-
-    public enum Category {
-        ELECTRONICS, CLOTHING, BOOKS, HOME, BEAUTY
-    }
 }

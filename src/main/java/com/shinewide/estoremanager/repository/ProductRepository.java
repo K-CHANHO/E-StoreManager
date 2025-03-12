@@ -1,7 +1,7 @@
 package com.shinewide.estoremanager.repository;
 
+import com.shinewide.estoremanager.domain.Category;
 import com.shinewide.estoremanager.domain.Product;
-import com.shinewide.estoremanager.domain.Product.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
