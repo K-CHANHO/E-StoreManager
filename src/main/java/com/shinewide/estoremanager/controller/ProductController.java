@@ -17,7 +17,7 @@ public class ProductController {
 
     private final ProductService productService;
 
-    @PreAuthorize("hasAuthority('ADMIN')") // 상품등록 - 관리자만 가능
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')") // 상품등록 - 관리자만 가능
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody ProductRequest request) {
         return ResponseEntity.ok(productService.createProduct(request));
@@ -33,13 +33,13 @@ public class ProductController {
         return ResponseEntity.ok(productService.getProductById(id));
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')") // 상품 수정 - 관리자만 가능
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')") // 상품 수정 - 관리자만 가능
     @PutMapping("/{id}")
     public ResponseEntity<Product> updateProduct(@PathVariable Long id, @RequestBody ProductRequest request) {
         return ResponseEntity.ok(productService.updateProduct(id, request));
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')") // 상품 삭제 - 관리자만 가능
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')") // 상품 삭제 - 관리자만 가능
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteProduct(@PathVariable Long id){
         productService.deleteProduct(id);

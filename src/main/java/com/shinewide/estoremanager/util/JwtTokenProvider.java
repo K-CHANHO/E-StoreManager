@@ -1,5 +1,6 @@
 package com.shinewide.estoremanager.util;
 
+import com.shinewide.estoremanager.security.UserDetailsServiceImpl;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -27,6 +28,7 @@ public class JwtTokenProvider {
     }
 
     public String generateToken(String email){
+
         return Jwts.builder()
                 .setSubject(email)
                 .setIssuedAt(new Date())
