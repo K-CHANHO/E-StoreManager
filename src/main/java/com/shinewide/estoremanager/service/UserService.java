@@ -9,6 +9,11 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import static com.shinewide.estoremanager.domain.User.*;
+
 @Service
 @RequiredArgsConstructor
 public class UserService {
@@ -19,7 +24,9 @@ public class UserService {
 
     public void register(UserRequestDto requestDto){
         String encodedPassword = passwordEncoder.encode(requestDto.getPassword());
-        User user = new User(null, requestDto.getEmail(), encodedPassword, User.Role.USER);
+        Set<Role> roles = new HashSet<>();
+        roles.add(Role.USER);
+        User user = new User(null, requestDto.getEmail(), encodedPassword, roles);
         userRepository.save(user);
     }
 
