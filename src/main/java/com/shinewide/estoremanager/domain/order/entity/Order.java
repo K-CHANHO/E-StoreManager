@@ -1,7 +1,7 @@
-package com.shinewide.estoremanager.domain;
+package com.shinewide.estoremanager.domain.order.entity;
 
+import com.shinewide.estoremanager.domain.user.entity.User;
 import jakarta.persistence.*;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

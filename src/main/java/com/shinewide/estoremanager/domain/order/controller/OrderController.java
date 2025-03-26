@@ -1,8 +1,8 @@
-package com.shinewide.estoremanager.controller;
+package com.shinewide.estoremanager.domain.order.controller;
 
-import com.shinewide.estoremanager.domain.Order;
-import com.shinewide.estoremanager.dto.OrderItemDto;
-import com.shinewide.estoremanager.service.OrderService;
+import com.shinewide.estoremanager.domain.order.dto.OrderItemDto;
+import com.shinewide.estoremanager.domain.order.service.OrderService;
+import com.shinewide.estoremanager.domain.order.entity.Order;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

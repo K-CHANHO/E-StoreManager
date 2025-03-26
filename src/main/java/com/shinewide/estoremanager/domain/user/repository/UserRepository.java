@@ -1,6 +1,6 @@
-package com.shinewide.estoremanager.repository;
+package com.shinewide.estoremanager.domain.user.repository;
 
-import com.shinewide.estoremanager.domain.User;
+import com.shinewide.estoremanager.domain.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

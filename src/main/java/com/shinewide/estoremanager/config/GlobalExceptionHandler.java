@@ -1,6 +1,6 @@
 package com.shinewide.estoremanager.config;
 
-import com.shinewide.estoremanager.dto.ErrorResponse;
+import com.shinewide.estoremanager.util.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;

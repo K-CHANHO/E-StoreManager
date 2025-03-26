@@ -1,10 +1,10 @@
-package com.shinewide.estoremanager.controller;
+package com.shinewide.estoremanager.domain.user.controller;
 
 
-import com.shinewide.estoremanager.dto.AuthResponseDto;
-import com.shinewide.estoremanager.dto.UserRequestDto;
+import com.shinewide.estoremanager.domain.user.dto.AuthResponseDto;
+import com.shinewide.estoremanager.domain.user.dto.UserRequestDto;
+import com.shinewide.estoremanager.domain.user.service.UserService;
 import com.shinewide.estoremanager.security.UserDetailsImpl;
-import com.shinewide.estoremanager.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

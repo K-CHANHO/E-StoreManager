@@ -1,8 +1,8 @@
-package com.shinewide.estoremanager.controller;
+package com.shinewide.estoremanager.domain.product.controller;
 
-import com.shinewide.estoremanager.domain.Product;
-import com.shinewide.estoremanager.dto.ProductRequest;
-import com.shinewide.estoremanager.service.ProductService;
+import com.shinewide.estoremanager.domain.product.dto.ProductRequest;
+import com.shinewide.estoremanager.domain.product.service.ProductService;
+import com.shinewide.estoremanager.domain.product.entity.Product;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

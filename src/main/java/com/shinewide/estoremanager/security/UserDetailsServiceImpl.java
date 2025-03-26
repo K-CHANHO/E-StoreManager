@@ -1,7 +1,7 @@
 package com.shinewide.estoremanager.security;
 
-import com.shinewide.estoremanager.domain.User;
-import com.shinewide.estoremanager.repository.UserRepository;
+import com.shinewide.estoremanager.domain.user.entity.User;
+import com.shinewide.estoremanager.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

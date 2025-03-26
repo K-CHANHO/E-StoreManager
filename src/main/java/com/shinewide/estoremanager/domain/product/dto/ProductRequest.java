@@ -1,6 +1,6 @@
-package com.shinewide.estoremanager.dto;
+package com.shinewide.estoremanager.domain.product.dto;
 
-import com.shinewide.estoremanager.domain.Category;
+import com.shinewide.estoremanager.domain.product.Category;
 import lombok.Getter;
 import lombok.Setter;
 

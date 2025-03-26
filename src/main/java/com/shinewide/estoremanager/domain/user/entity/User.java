@@ -1,4 +1,4 @@
-package com.shinewide.estoremanager.domain;
+package com.shinewide.estoremanager.domain.user.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -33,7 +33,4 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles = new HashSet<>();
 
-    public enum Role {
-        USER, ADMIN
-    }
 }

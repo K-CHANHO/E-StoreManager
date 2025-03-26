@@ -1,5 +1,6 @@
-package com.shinewide.estoremanager.domain;
+package com.shinewide.estoremanager.domain.product.entity;
 
+import com.shinewide.estoremanager.domain.product.Category;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

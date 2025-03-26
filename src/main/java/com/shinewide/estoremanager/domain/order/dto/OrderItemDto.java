@@ -1,4 +1,4 @@
-package com.shinewide.estoremanager.dto;
+package com.shinewide.estoremanager.domain.order.dto;
 
 import lombok.Data;
 

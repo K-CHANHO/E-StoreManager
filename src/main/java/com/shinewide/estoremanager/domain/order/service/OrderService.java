@@ -1,13 +1,13 @@
-package com.shinewide.estoremanager.service;
+package com.shinewide.estoremanager.domain.order.service;
 
-import com.shinewide.estoremanager.domain.Order;
-import com.shinewide.estoremanager.domain.OrderItem;
-import com.shinewide.estoremanager.domain.Product;
-import com.shinewide.estoremanager.domain.User;
-import com.shinewide.estoremanager.dto.OrderItemDto;
-import com.shinewide.estoremanager.repository.OrderRepository;
-import com.shinewide.estoremanager.repository.ProductRepository;
-import com.shinewide.estoremanager.repository.UserRepository;
+import com.shinewide.estoremanager.domain.order.dto.OrderItemDto;
+import com.shinewide.estoremanager.domain.order.entity.Order;
+import com.shinewide.estoremanager.domain.order.entity.OrderItem;
+import com.shinewide.estoremanager.domain.order.repository.OrderRepository;
+import com.shinewide.estoremanager.domain.product.entity.Product;
+import com.shinewide.estoremanager.domain.user.entity.User;
+import com.shinewide.estoremanager.domain.product.repository.ProductRepository;
+import com.shinewide.estoremanager.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

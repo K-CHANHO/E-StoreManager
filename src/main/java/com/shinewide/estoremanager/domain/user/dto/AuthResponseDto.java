@@ -1,4 +1,4 @@
-package com.shinewide.estoremanager.dto;
+package com.shinewide.estoremanager.domain.user.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,8 +1,8 @@
-package com.shinewide.estoremanager.service;
+package com.shinewide.estoremanager.domain.product.service;
 
-import com.shinewide.estoremanager.domain.Product;
-import com.shinewide.estoremanager.dto.ProductRequest;
-import com.shinewide.estoremanager.repository.ProductRepository;
+import com.shinewide.estoremanager.domain.product.dto.ProductRequest;
+import com.shinewide.estoremanager.domain.product.entity.Product;
+import com.shinewide.estoremanager.domain.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

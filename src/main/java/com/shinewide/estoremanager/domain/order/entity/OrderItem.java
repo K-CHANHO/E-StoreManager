@@ -1,6 +1,7 @@
-package com.shinewide.estoremanager.domain;
+package com.shinewide.estoremanager.domain.order.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.shinewide.estoremanager.domain.product.entity.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

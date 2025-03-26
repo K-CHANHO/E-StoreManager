@@ -1,9 +1,9 @@
-package com.shinewide.estoremanager.service;
+package com.shinewide.estoremanager.domain.user.service;
 
-import com.shinewide.estoremanager.domain.User;
-import com.shinewide.estoremanager.dto.AuthResponseDto;
-import com.shinewide.estoremanager.dto.UserRequestDto;
-import com.shinewide.estoremanager.repository.UserRepository;
+import com.shinewide.estoremanager.domain.user.dto.AuthResponseDto;
+import com.shinewide.estoremanager.domain.user.repository.UserRepository;
+import com.shinewide.estoremanager.domain.user.dto.UserRequestDto;
+import com.shinewide.estoremanager.domain.user.entity.User;
 import com.shinewide.estoremanager.util.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.shinewide.estoremanager.domain.User.*;
+import static com.shinewide.estoremanager.domain.user.entity.User.*;
 
 @Service
 @RequiredArgsConstructor
