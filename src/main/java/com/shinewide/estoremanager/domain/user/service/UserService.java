@@ -1,6 +1,7 @@
 package com.shinewide.estoremanager.domain.user.service;
 
 import com.shinewide.estoremanager.domain.user.dto.AuthResponseDto;
+import com.shinewide.estoremanager.domain.user.entity.Role;
 import com.shinewide.estoremanager.domain.user.repository.UserRepository;
 import com.shinewide.estoremanager.domain.user.dto.UserRequestDto;
 import com.shinewide.estoremanager.domain.user.entity.User;
