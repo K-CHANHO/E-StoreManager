@@ -49,9 +49,4 @@ public class Order {
         this.status = OrderStatus.COMPLETED;
     }
 
-    public enum OrderStatus {
-        PENDING,    // 결제대기
-        COMPLETED,  // 결제완료
-        CANCELED    // 주문취소
-    }
 }
